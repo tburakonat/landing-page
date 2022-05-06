@@ -118,17 +118,22 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("https://images.sportbuzzer.de/v1/photos/raw/149672005f208f02/regular-16-9");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #quote {
     display: flex;
     flex-direction: column;
+    color: #e5e7eb;
+    text-shadow: 0 0 5px black;
 }
 
 #quote div {
     max-width: 600px;
     font-size: 36px;
-    font-weight: 100;
+    font-weight: 300;
     font-style: italic;
     flex-shrink: 2;
 }
@@ -188,6 +193,9 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
+    #quote-section {
+        background-position: center;
+    }
     #quote div {
         max-width: 400px;
         font-size: 26px;
